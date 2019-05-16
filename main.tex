@@ -1,0 +1,43 @@
+\documentclass[12pt, a4paper]{article}
+
+% Generic packages
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Formatting packages
+\usepackage{csquotes}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{parskip}
+
+% Bibliography package
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\geometry{a4paper, portrait, margin=1.3in}
+
+\title{
+    Context of Learning/Organizational Profile\\
+    \large CT5004 -- University of Gloucestershire
+}
+\author{Josh Demir}
+
+% Load in bibliography with \addbibresource
+\addbibresource{refs.bib}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Organizational Profile}
+\fancyhead[R]{Josh Demir}
+
+\begin{document}
+
+\thispagestyle{empty}
+\maketitle
+\tableofcontents
+
+\include{introduction}
+\include{customers}
+
+
+% Display bibliography in document
+\printbibliography
+\end{document}
